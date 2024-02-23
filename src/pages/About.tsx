@@ -26,7 +26,7 @@ export function About() {
             <p className="text-4xl font-bold">{t("about")}</p>
             <p className="text-xl font-semibold text-justify mt-5">
               {t("aboutText1")}{" "}
-              <strong className="text-green-500">{t("job1")}</strong>{" "}
+              <strong className="text-green-500">{t("job")}</strong>{" "}
               {t("aboutText1_1")}{" "}
               <strong className="text-green-500">{t("job2")}</strong>{" "}
               {t("aboutText1_2")}

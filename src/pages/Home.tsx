@@ -3,6 +3,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { emptyOnMobile } from "../utils/checkMobile";
+import { Button } from "../components/Button";
 
 export function Home() {
   const { t } = useTranslation();
@@ -46,6 +47,17 @@ export function Home() {
         >
           {t("job")}
         </motion.h1>
+        <motion.div
+          className="flex justify-center gap-3 mt-10"
+          initial={emptyOnMobile({ opacity: 0 })}
+          animate={emptyOnMobile({ opacity: 1 })}
+          transition={emptyOnMobile({ delay: 2, duration: 1 })}
+        >
+          <Button text={t("contactMe")} variant="primary" />
+          <a href="#projects">
+            <Button text={t("See my projects")} variant="secondary" />
+          </a>
+        </motion.div>
       </motion.div>
       <motion.span
         className="animate-bounce absolute font-bold bottom-10 invisible md:visible"

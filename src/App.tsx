@@ -7,7 +7,7 @@ import { MotionConfig } from "framer-motion";
 
 export function App() {
   return (
-    <main className="dark:text-white text-zinc-900 bg-gradient-to-b dark:from-zinc-900 dark:to-zinc-800 bg-stone-100 bg-fixed">
+    <main className="dark:text-white text-zinc-900 bg-gradient-to-b dark:from-[#020420] dark:to-slate-900 bg-stone-100 bg-fixed">
       <Nav />
       <MotionConfig reducedMotion="user">
         <Home />
