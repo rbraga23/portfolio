@@ -55,7 +55,7 @@ export function Home() {
         >
           <Button text={t("contactMe")} variant="primary" />
           <a href="#projects">
-            <Button text={t("See my projects")} variant="secondary" />
+            <Button text={t("seeMyProjects")} variant="secondary" />
           </a>
         </motion.div>
       </motion.div>

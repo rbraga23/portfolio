@@ -9,6 +9,7 @@ const resources = {
       job2: "Cloud Architect",
       about: "About me",
       projects: "Projects",
+      seeMyProjects: "See my projects",
       contact: "Contact",
       contactMe: "Contact me",
       brazilianFlag: "Brazilian Flag",
@@ -46,6 +47,7 @@ const resources = {
         "Eu realmente acredito que as linguagens de programação são apenas ferramentas. A solução reside no planejamento e execução, aprendo rápido, não me importo de aprender e trabalhar com as tecnologias que você mais ama.",
       aboutText4:
         "Meu objetivo é extrair e construir a melhor solução com os recursos disponíveis.",
+      seeMyProjects: "Meus projetos",
     },
   },
 };
