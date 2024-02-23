@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { emptyOnMobile } from "../utils/checkMobile";
+import Profile from "../assets/about/profile-pic.png";
 
 export function About() {
   const { t } = useTranslation();
@@ -23,7 +24,7 @@ export function About() {
         >
           <div className="p-5">
             <p className="text-4xl font-bold">{t("about")}</p>
-            <p className="text-xl font-semibold text-justify mt-2">
+            <p className="text-xl font-semibold text-justify mt-5">
               {t("aboutText1")}{" "}
               <strong className="text-green-500">{t("job1")}</strong>{" "}
               {t("aboutText1_1")}{" "}
@@ -40,12 +41,12 @@ export function About() {
               {t("aboutText4")}
             </p>
           </div>
-          <div className="w-full h-fit mt-16 flex justify-center">
+          <div className="w-full mt-8 h-[410px] flex justify-center">
             <img
-              className="object-cover shadow-md shadow-gray-900/20 dark:shadow-slate-200/20"
-              src="http://via.placeholder.com/640x360"
-              height={360}
-              width={640}
+              className="object-fill"
+              src={Profile}
+              height={410}
+              width={410}
               alt={t("bragaImgAlt")}
             />
           </div>
