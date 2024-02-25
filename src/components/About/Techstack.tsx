@@ -12,7 +12,7 @@ import { MachineLearningStack } from "./stacks/machineLearning";
 export function Techstack() {
   const { t } = useTranslation();
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { amount: 0.4, once: true });
+  const isInView = useInView(ref, { amount: 0.3, once: true });
 
   return (
     <motion.div
