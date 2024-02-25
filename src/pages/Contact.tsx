@@ -79,11 +79,15 @@ export function Contact() {
               <Input label="Email" id="email" {...register("email")} />
               <span className="text-red-500">{errors.email?.message}</span>
             </div>
-            <div className="my-8">
-              <TextArea label="Message" rows={3} {...register("message")} />
+            <div className="my-12">
+              <TextArea
+                label={t("message")}
+                rows={3}
+                {...register("message")}
+              />
               <span className="text-red-500">{errors.message?.message}</span>
             </div>
-            <div className="my-2">
+            <div className="-my-3">
               <Button variant="primary" text={t("send")} className="w-24" />
               <span className="text-red-500">{submitError}</span>
             </div>

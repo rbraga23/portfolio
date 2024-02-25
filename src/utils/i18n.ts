@@ -24,6 +24,8 @@ const resources = {
         "I truly believe that programming languages are just tools. The solution lies in planning and execution. I learn quickly, and I don't mind learning and working with the technologies you love the most.",
       aboutText4:
         "My goal is to extract and build the best solution with the available resources.",
+      message: "Message",
+      send: "Send",
     },
   },
   pt: {
@@ -33,6 +35,7 @@ const resources = {
       job2: "Arquiteto Cloud",
       about: "Sobre mim",
       projects: "Projetos",
+      seeMyProjects: "Meus projetos",
       contact: "Contato",
       contactMe: "Contate-me",
       brazilianFlag: "Bandeira do Brasil",
@@ -47,7 +50,8 @@ const resources = {
         "Eu realmente acredito que as linguagens de programação são apenas ferramentas. A solução reside no planejamento e execução, aprendo rápido, não me importo de aprender e trabalhar com as tecnologias que você mais ama.",
       aboutText4:
         "Meu objetivo é extrair e construir a melhor solução com os recursos disponíveis.",
-      seeMyProjects: "Meus projetos",
+      message: "Mensagem",
+      send: "Enviar",
     },
   },
 };
