@@ -49,7 +49,6 @@ export function Nav() {
   }
 
   function handleContactClick() {
-    setActive("contact");
     setIsContactModalOpen(true);
   }
 
@@ -93,10 +92,7 @@ export function Nav() {
             {t("projects")}
           </a>
           <button
-            className={cn(
-              "hover:text-green-500",
-              active === "contact" && "text-green-500"
-            )}
+            className={cn("hover:text-green-500")}
             onClick={handleContactClick}
           >
             {t("contact")}
