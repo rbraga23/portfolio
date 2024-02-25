@@ -1,19 +1,21 @@
-import { createContext, useState } from "react";
+import {
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  createContext,
+  useState,
+} from "react";
 
 interface ContactModalContextProps {
   isContactModalOpen: boolean;
-  setIsContactModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsContactModalOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 export const ContactModalContext = createContext<ContactModalContextProps>(
   {} as ContactModalContextProps
 );
 
-export function ContactModalProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export function ContactModalProvider({ children }: { children: ReactNode }) {
   const [isContactModalOpen, setIsContactModalOpen] = useState<boolean>(false);
 
   return (

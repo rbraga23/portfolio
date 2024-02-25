@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import { Modal } from "../components/Modal";
+import { Modal } from "../components/Layout/Modal";
 import { Input } from "../components/Form/Input";
 import { TextArea } from "../components/Form/Textarea";
-import { useContactModal } from "../hooks/useContactModal";
+import { useContactModal } from "../hooks/useContactModal.hook";
 import { Button } from "../components/Form/Button";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";

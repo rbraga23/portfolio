@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { emptyOnMobile } from "../utils/checkMobile";
 import { Button } from "../components/Form/Button";
-import { useContactModal } from "../hooks/useContactModal";
+import { useContactModal } from "../hooks/useContactModal.hook";
 
 export function Home() {
   const { t } = useTranslation();

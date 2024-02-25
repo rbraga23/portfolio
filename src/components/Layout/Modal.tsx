@@ -1,11 +1,12 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import { Dispatch, ReactNode, SetStateAction } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 
 interface ModalProps {
-  children?: React.ReactNode;
+  children?: ReactNode;
   title?: string;
   isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 export function Modal({ children, isOpen, setIsOpen, title }: ModalProps) {

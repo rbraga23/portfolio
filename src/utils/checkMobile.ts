@@ -1,4 +1,4 @@
-import { UseTailwindConfig } from "../hooks/useTailwind";
+import { UseTailwindConfig } from "../hooks/useTailwind.hook";
 
 export function checkMobile() {
   const tailwindConfig = UseTailwindConfig();

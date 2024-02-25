@@ -2,11 +2,11 @@ import { useState, ReactNode, useEffect } from "react";
 import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi2";
 import { CiMenuBurger } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
-import { cn } from "../utils/cn";
+import { cn } from "../../utils/cn";
 import { useTranslation } from "react-i18next";
-import Brazil from "../assets/flags/brazil.webp";
-import US from "../assets/flags/us.webp";
-import { useContactModal } from "../hooks/useContactModal";
+import Brazil from "../../assets/flags/brazil.webp";
+import US from "../../assets/flags/us.webp";
+import { useContactModal } from "../../hooks/useContactModal.hook";
 
 export function Nav() {
   const { setIsContactModalOpen } = useContactModal();
