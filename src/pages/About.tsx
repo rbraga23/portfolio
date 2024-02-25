@@ -17,7 +17,10 @@ export function About() {
 
   return (
     <section id="about">
-      <motion.div ref={targetRef} className="w-full flex justify-center pt-24">
+      <motion.div
+        ref={targetRef}
+        className="w-full flex justify-center h-screen pt-24"
+      >
         <motion.div
           style={emptyOnMobile({ opacity, scale })}
           className="grid grid-cols-1 order-last lg:grid-cols-2 z-10 max-w-[1150px]"

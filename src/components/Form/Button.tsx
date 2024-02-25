@@ -1,9 +1,11 @@
 import { cva } from "class-variance-authority";
 import { HtmlHTMLAttributes } from "react";
+import { cn } from "../../utils/cn";
 
 interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
   text: string;
   variant?: "primary" | "secondary";
+  className?: string;
 }
 
 const buttonVariants = cva("text-md font-medium me-2 px-4 py-2 rounded", {
@@ -16,6 +18,10 @@ const buttonVariants = cva("text-md font-medium me-2 px-4 py-2 rounded", {
   },
 });
 
-export function Button({ variant, text }: ButtonProps) {
-  return <button className={buttonVariants({ variant })}>{text}</button>;
+export function Button({ variant, text, className, ...rest }: ButtonProps) {
+  return (
+    <button className={cn(buttonVariants({ variant }), className)} {...rest}>
+      {text}
+    </button>
+  );
 }

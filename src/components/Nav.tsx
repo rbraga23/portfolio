@@ -6,8 +6,11 @@ import { cn } from "../utils/cn";
 import { useTranslation } from "react-i18next";
 import Brazil from "../assets/flags/brazil.webp";
 import US from "../assets/flags/us.webp";
+import { useContactModal } from "../hooks/useContactModal";
 
 export function Nav() {
+  const { setIsContactModalOpen } = useContactModal();
+
   const [theme, setTheme] = useState(
     window.localStorage.getItem("theme") || "dark"
   );
@@ -43,6 +46,11 @@ export function Nav() {
     const newLanguage = language === "en" ? "pt-BR" : "en";
     setLanguage(newLanguage);
     setFlag(newLanguage === "en" ? US : Brazil);
+  }
+
+  function handleContactClick() {
+    setActive("contact");
+    setIsContactModalOpen(true);
   }
 
   return (
@@ -84,16 +92,15 @@ export function Nav() {
           >
             {t("projects")}
           </a>
-          <a
+          <button
             className={cn(
               "hover:text-green-500",
               active === "contact" && "text-green-500"
             )}
-            href="#contact"
-            onClick={() => setActive("contact")}
+            onClick={handleContactClick}
           >
             {t("contact")}
-          </a>
+          </button>
         </div>
         <div className="flex px-2 gap-4 text-2xl items-center">
           <img

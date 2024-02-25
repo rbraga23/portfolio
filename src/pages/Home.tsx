@@ -3,10 +3,12 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { emptyOnMobile } from "../utils/checkMobile";
-import { Button } from "../components/Button";
+import { Button } from "../components/Form/Button";
+import { useContactModal } from "../hooks/useContactModal";
 
 export function Home() {
   const { t } = useTranslation();
+  const { setIsContactModalOpen } = useContactModal();
   const targetRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -35,7 +37,7 @@ export function Home() {
           className="text-4xl md:text-7xl -mt-12 md:mt-0 text-center font-bold"
           initial={emptyOnMobile({ opacity: 0 })}
           animate={emptyOnMobile({ opacity: 1 })}
-          transition={emptyOnMobile({ delay: 0.3, duration: 1 })}
+          transition={emptyOnMobile({ duration: 1 })}
         >
           {`${t("name")}`}
         </motion.h1>
@@ -53,7 +55,11 @@ export function Home() {
           animate={emptyOnMobile({ opacity: 1 })}
           transition={emptyOnMobile({ delay: 2, duration: 1 })}
         >
-          <Button text={t("contactMe")} variant="primary" />
+          <Button
+            text={t("contactMe")}
+            variant="primary"
+            onClick={() => setIsContactModalOpen(true)}
+          />
           <a href="#projects">
             <Button text={t("seeMyProjects")} variant="secondary" />
           </a>
