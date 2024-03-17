@@ -9,6 +9,8 @@ const resources = {
       job2: "Cloud Architect",
       about: "About me",
       projects: "Projects",
+      project: "Project",
+      company: "Company",
       seeMyProjects: "See my projects",
       contact: "Contact",
       contactMe: "Contact me",
@@ -33,6 +35,19 @@ const resources = {
       infrastructure: "Infrastructure & DevOps",
       mobile: "Mobile",
       machineLearning: "Machine Learning",
+      description: "Description",
+      type: "Type",
+      noPublicLink: "No public link",
+      Techstack: "Techstack",
+      ulbraTitle: "Ulbra University",
+      fmuTitle: "FMU University Center",
+      audenTitle: "Auden College",
+      registrationForm: "Registration Form",
+      financialDashboard: "Financial Dashboard",
+      hubspotIntegration: "Hubspot Integration",
+      machineLearningModel: "Machine Learning Model",
+      ulbraDescription:
+        "This project was developed for the university I studied at. It is a registration form for the university's events. The project was developed using Next.js and NestJS.",
     },
   },
   pt: {
@@ -42,6 +57,8 @@ const resources = {
       job2: "Arquiteto Cloud",
       about: "Sobre mim",
       projects: "Projetos",
+      project: "Projeto",
+      company: "Empresa",
       seeMyProjects: "Meus projetos",
       contact: "Contato",
       contactMe: "Contate-me",
@@ -66,13 +83,30 @@ const resources = {
       infrastructure: "Infraestrutura & DevOps",
       mobile: "Mobile",
       machineLearning: "Machine Learning",
+      description: "Descrição",
+      type: "Tipo",
+      noPublicLink: "Sem link público",
+      Techstack: "Tecnologias",
+      ulbraTitle: "Universidade Ulbra",
+      fmuTitle: "FMU",
+      audenTitle: "Auden",
+      registrationForm: "Formulário de inscrição",
+      financialDashboard: "Dashboard Financeiro",
+      hubspotIntegration: "Integração com Hubspot",
+      machineLearningModel: "Modelo de Machine Learning",
+      ulbraDescription:
+        "Este projeto foi desenvolvido para a universidade em que estudei. É um formulário de inscrição para os eventos da universidade. O projeto foi desenvolvido usando Next.js e NestJS.",
     },
   },
 };
 
+export const browserLanguage = window.navigator.language.includes("pt")
+  ? "pt-BR"
+  : "en";
+
 i18n.use(initReactI18next).init({
   resources,
-  lng: window.localStorage.getItem("language") || "en",
+  lng: window.localStorage.getItem("language") || browserLanguage,
   interpolation: {
     escapeValue: false,
   },

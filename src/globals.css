@@ -19,3 +19,33 @@
   background: #888;
   border-radius: 3px;
 }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev {
+  @apply text-red-400;
+}
+
+.swiper-button-disabled {
+  color: #27272a;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  color: #22c55e;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  color: #22c55e;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #22c55e;
+}

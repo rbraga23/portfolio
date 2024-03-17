@@ -5,7 +5,7 @@ import { FaCode } from "react-icons/fa";
 import { emptyOnMobile } from "../../../utils/checkMobile";
 
 interface StackProps {
-  title: string;
+  title?: string;
   stack: IStack[];
 }
 
@@ -24,7 +24,7 @@ export function Stack({ stack, title }: StackProps) {
 
   return (
     <div className="mt-5">
-      <h1 className="text-2xl font-bold mb-2">{t(title)}</h1>
+      {title && <h1 className="text-2xl font-bold mb-2">{t(title)}</h1>}
       <div className="flex flex-row flex-wrap gap-3">
         {stack.map((item: IStack) => (
           <motion.div key={item.name} variants={animationVariants as Variants}>
