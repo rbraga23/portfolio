@@ -1,7 +1,7 @@
 import { useState, ReactNode, useEffect } from "react";
 import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi2";
 import { CiMenuBurger } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { cn } from "../../utils/cn";
 import { useTranslation } from "react-i18next";
 import Brazil from "../../assets/flags/brazil.webp";
@@ -114,6 +114,13 @@ export function Nav() {
           <button className="hover:text-green-500" onClick={handleThemeChange}>
             {icon}
           </button>
+          <a
+            href="https://www.linkedin.com/in/rafael-braga-15981185"
+            target="_blank"
+            className="hover:text-green-500"
+          >
+            <FaLinkedin />
+          </a>
           <a
             href="https://github.com/rbraga23"
             target="_blank"
