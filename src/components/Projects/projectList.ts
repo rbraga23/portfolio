@@ -63,6 +63,86 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Dr.Cash",
+    subtitle: "financialDashboard",
+    type: [
+      {
+        name: "Frontend",
+        variant: "blue",
+      },
+    ],
+    description: "drCashDescription",
+    stack: [
+      {
+        name: "React",
+        icon: SiReact,
+        color: "text-blue-500",
+      },
+    ],
+    projectLinks: [
+      {
+        title: "project",
+      },
+      {
+        title: "company",
+        link: "https://www.drcash.com.br/",
+      },
+    ],
+    images: [DrCash1, DrCash2],
+  },
+  {
+    title: "mkt4edu",
+    subtitle: "hubspotIntegration",
+    type: [
+      {
+        name: "Backend",
+        variant: "gray",
+      },
+      {
+        name: "Infrastructure",
+        variant: "yellow",
+      },
+    ],
+    description: "mkt4eduConexDescription",
+    stack: [
+      {
+        name: "NestJS",
+        icon: SiNestjs,
+        color: "text-red-500",
+      },
+      {
+        name: "AWS",
+        icon: SiAmazonaws,
+        color: "text-yellow-500",
+      },
+      {
+        name: "MongoDB",
+        icon: SiMongodb,
+        color: "text-green-500",
+      },
+      {
+        name: "RabbitMQ",
+        icon: SiRabbitmq,
+        color: "text-orange-500",
+      },
+      {
+        name: "MySQL",
+        icon: SiMysql,
+        color: "text-blue-500",
+      },
+    ],
+    projectLinks: [
+      {
+        title: "project",
+      },
+      {
+        title: "company",
+        link: "https://www.mkt4edu.com/",
+      },
+    ],
+    images: [Mkt4eduConex3, Mkt4eduConex1, Mkt4eduConex2, Mkt4eduConex4],
+  },
+  {
     title: "ulbraTitle",
     subtitle: "registrationForm",
     type: [
@@ -75,7 +155,7 @@ export const projects: Project[] = [
         variant: "yellow",
       },
     ],
-    description: "ulbraDescription",
+    description: "formDescription",
     stack: [
       {
         name: "Next.js",
@@ -114,140 +194,6 @@ export const projects: Project[] = [
       },
     ],
     images: [Ulbra1, Ulbra2, Ulbra3],
-  },
-  {
-    title: "fmuTitle",
-    subtitle: "registrationForm",
-    type: [
-      {
-        name: "Fullstack",
-        variant: "red",
-      },
-      {
-        name: "Infrastructure",
-        variant: "yellow",
-      },
-    ],
-    description: "fmuDescription",
-    stack: [
-      {
-        name: "React",
-        icon: SiReact,
-        color: "text-blue-500",
-      },
-      {
-        name: "NestJS",
-        icon: SiNestjs,
-        color: "text-red-500",
-      },
-      {
-        name: "AWS",
-        icon: SiAmazonaws,
-        color: "text-yellow-500",
-      },
-      {
-        name: "MongoDB",
-        icon: SiMongodb,
-        color: "text-green-500",
-      },
-      {
-        name: "MySQL",
-        icon: SiMysql,
-        color: "text-blue-500",
-      },
-    ],
-    projectLinks: [
-      {
-        title: "project",
-        link: "https://inscricoes.fmu.br/",
-      },
-      {
-        title: "company",
-        link: "https://fmu.br/",
-      },
-    ],
-    images: [Fmu1, Fmu2],
-  },
-  {
-    title: "Dr.Cash",
-    subtitle: "financialDashboard",
-    type: [
-      {
-        name: "Frontend",
-        variant: "blue",
-      },
-    ],
-    description: "drCashDescription",
-    stack: [
-      {
-        name: "React",
-        icon: SiReact,
-        color: "text-blue-500",
-      },
-    ],
-    projectLinks: [
-      {
-        title: "project",
-      },
-      {
-        title: "company",
-        link: "https://www.drcash.com.br/",
-      },
-    ],
-    images: [DrCash1, DrCash2],
-  },
-  {
-    title: "audenTitle",
-    subtitle: "registrationForm",
-    type: [
-      {
-        name: "Fullstack",
-        variant: "red",
-      },
-      {
-        name: "Infrastructure",
-        variant: "yellow",
-      },
-    ],
-    description: "audenDescription",
-    stack: [
-      {
-        name: "Next.js",
-        icon: TbBrandNextjs,
-        color: "text-black",
-      },
-      {
-        name: "NestJS",
-        icon: SiNestjs,
-        color: "text-red-500",
-      },
-      {
-        name: "AWS",
-        icon: SiAmazonaws,
-        color: "text-yellow-500",
-      },
-      {
-        name: "MongoDB",
-        icon: SiMongodb,
-        color: "text-green-500",
-      },
-      {
-        name: "MySQL",
-        icon: SiMysql,
-        color: "text-blue-500",
-      },
-    ],
-    projectLinks: [
-      {
-        title: "project",
-        link: "https://inscricao.auden.edu.br/",
-      },
-      {
-        title: "company",
-        link: "https://auden.edu.br/",
-      },
-    ],
-    images: [Auden1, Auden2],
   },
   {
     title: "Synkro",
@@ -306,58 +252,7 @@ export const projects: Project[] = [
     ],
     images: [Synkro1, Synkro2, Synkro3],
   },
-  {
-    title: "mkt4edu",
-    subtitle: "hubspotIntegration",
-    type: [
-      {
-        name: "Backend",
-        variant: "gray",
-      },
-      {
-        name: "Infrastructure",
-        variant: "yellow",
-      },
-    ],
-    description: "mkt4eduConexDescription",
-    stack: [
-      {
-        name: "NestJS",
-        icon: SiNestjs,
-        color: "text-red-500",
-      },
-      {
-        name: "AWS",
-        icon: SiAmazonaws,
-        color: "text-yellow-500",
-      },
-      {
-        name: "MongoDB",
-        icon: SiMongodb,
-        color: "text-green-500",
-      },
-      {
-        name: "RabbitMQ",
-        icon: SiRabbitmq,
-        color: "text-orange-500",
-      },
-      {
-        name: "MySQL",
-        icon: SiMysql,
-        color: "text-blue-500",
-      },
-    ],
-    projectLinks: [
-      {
-        title: "project",
-      },
-      {
-        title: "company",
-        link: "https://www.mkt4edu.com/",
-      },
-    ],
-    images: [Mkt4eduConex1, Mkt4eduConex2, Mkt4eduConex3, Mkt4eduConex4],
-  },
+
   {
     title: "mkt4edu",
     subtitle: "machineLearningModel",
@@ -367,7 +262,7 @@ export const projects: Project[] = [
         variant: "purple",
       },
     ],
-    description: "mkt4eduConexDescription",
+    description: "mkt4eduIaDescription",
     stack: [
       {
         name: "Jupyter",
@@ -395,5 +290,112 @@ export const projects: Project[] = [
       },
     ],
     images: [Mkt4eduIa1, Mkt4eduIa2, Mkt4eduIa3, Mkt4eduIa4],
+  },
+  {
+    title: "fmuTitle",
+    subtitle: "registrationForm",
+    type: [
+      {
+        name: "Fullstack",
+        variant: "red",
+      },
+      {
+        name: "Infrastructure",
+        variant: "yellow",
+      },
+    ],
+    description: "formDescription",
+    stack: [
+      {
+        name: "React",
+        icon: SiReact,
+        color: "text-blue-500",
+      },
+      {
+        name: "NestJS",
+        icon: SiNestjs,
+        color: "text-red-500",
+      },
+      {
+        name: "AWS",
+        icon: SiAmazonaws,
+        color: "text-yellow-500",
+      },
+      {
+        name: "MongoDB",
+        icon: SiMongodb,
+        color: "text-green-500",
+      },
+      {
+        name: "MySQL",
+        icon: SiMysql,
+        color: "text-blue-500",
+      },
+    ],
+    projectLinks: [
+      {
+        title: "project",
+        link: "https://inscricoes.fmu.br/",
+      },
+      {
+        title: "company",
+        link: "https://fmu.br/",
+      },
+    ],
+    images: [Fmu1, Fmu2],
+  },
+
+  {
+    title: "audenTitle",
+    subtitle: "registrationForm",
+    type: [
+      {
+        name: "Fullstack",
+        variant: "red",
+      },
+      {
+        name: "Infrastructure",
+        variant: "yellow",
+      },
+    ],
+    description: "formDescription",
+    stack: [
+      {
+        name: "Next.js",
+        icon: TbBrandNextjs,
+        color: "text-black",
+      },
+      {
+        name: "NestJS",
+        icon: SiNestjs,
+        color: "text-red-500",
+      },
+      {
+        name: "AWS",
+        icon: SiAmazonaws,
+        color: "text-yellow-500",
+      },
+      {
+        name: "MongoDB",
+        icon: SiMongodb,
+        color: "text-green-500",
+      },
+      {
+        name: "MySQL",
+        icon: SiMysql,
+        color: "text-blue-500",
+      },
+    ],
+    projectLinks: [
+      {
+        title: "project",
+        link: "https://inscricao.auden.edu.br/",
+      },
+      {
+        title: "company",
+        link: "https://auden.edu.br/",
+      },
+    ],
+    images: [Auden1, Auden2],
   },
 ];
