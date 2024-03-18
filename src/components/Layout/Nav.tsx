@@ -7,12 +7,18 @@ import { useTranslation } from "react-i18next";
 import Brazil from "../../assets/flags/brazil.webp";
 import US from "../../assets/flags/us.webp";
 import { useContactModal } from "../../hooks/useContactModal.hook";
+import { browserLanguage } from "../../utils/i18n";
 
 export function Nav() {
   const { setIsContactModalOpen } = useContactModal();
 
+  const systemColorSchema = window.matchMedia("(prefers-color-scheme: dark)")
+    .matches
+    ? "dark"
+    : "light";
+
   const [theme, setTheme] = useState(
-    window.localStorage.getItem("theme") || "dark"
+    window.localStorage.getItem("theme") || systemColorSchema
   );
   const [icon, setIcon] = useState<ReactNode>(
     theme === "dark" ? <HiOutlineSun /> : <HiOutlineMoon />
@@ -20,7 +26,7 @@ export function Nav() {
   const { t, i18n } = useTranslation();
   const [active, setActive] = useState("home");
   const [language, setLanguage] = useState(
-    window.localStorage.getItem("language") || "en"
+    window.localStorage.getItem("language") || browserLanguage
   );
   const [flag, setFlag] = useState(language === "en" ? US : Brazil);
 

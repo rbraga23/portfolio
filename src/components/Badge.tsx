@@ -1,8 +1,16 @@
 import { cva } from "class-variance-authority";
 
+export type BadgeVariants =
+  | "blue"
+  | "gray"
+  | "green"
+  | "red"
+  | "yellow"
+  | "purple";
+
 interface BadgeProps {
   text: string;
-  variant?: "blue" | "gray" | "green" | "red" | "yellow";
+  variant?: BadgeVariants;
 }
 
 const badgeVariants = cva("text-xs font-medium me-2 px-2.5 py-0.5 rounded", {
@@ -15,6 +23,8 @@ const badgeVariants = cva("text-xs font-medium me-2 px-2.5 py-0.5 rounded", {
       red: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
       yellow:
         "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
+      purple:
+        "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300",
     },
   },
 });
