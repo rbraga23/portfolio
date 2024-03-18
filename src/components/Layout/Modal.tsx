@@ -15,7 +15,7 @@ export function Modal({ children, isOpen, setIsOpen, title }: ModalProps) {
       <Dialog.Portal>
         <Dialog.Overlay
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 bg-black/20 bg-opacity-50 transition-opacity z-40"
+          className="fixed inset-0 bg-black bg-opacity-50 transition-opacity z-40"
         />
         <Dialog.Content className="w-full max-w-2xl fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 px-4 md:px-0 shadow rounded-md bg-stone-100 dark:bg-slate-900 dark:text-white z-50">
           <div className="w-full flex justify-between border-b dark:border-gray-800">

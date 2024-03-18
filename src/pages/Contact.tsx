@@ -9,6 +9,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import Cookies from "js-cookie";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const schema = yup.object().shape({
   email: yup.string().email().required(),
@@ -72,7 +73,7 @@ export function Contact() {
       setIsOpen={setIsContactModalOpen}
       title={t("contactMe")}
     >
-      <div className="w-full h-[700px] max-h-screen">
+      <div className="w-full min-h-[350px] max-h-screen">
         <div className="flex w-full p-8 flex-col">
           <form onSubmit={handleSubmit(onSubmitHandler)}>
             <div className="my-5">
@@ -87,9 +88,27 @@ export function Contact() {
               />
               <span className="text-red-500">{errors.message?.message}</span>
             </div>
-            <div className="-my-3">
-              <Button variant="primary" text={t("send")} className="w-24" />
-              <span className="text-red-500">{submitError}</span>
+            <div className="-my-3 flex gap-3 w-full justify-evenly">
+              <div className="flex justify-start w-full">
+                <Button variant="primary" text={t("send")} className="w-24" />
+                <span className="text-red-500">{submitError}</span>
+              </div>
+              <div className="flex text-3xl gap-3 w-full justify-end">
+                <a
+                  href="https://github.com/rbraga23"
+                  target="_blank"
+                  className="hover:text-green-500"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/rafael-braga-15981185"
+                  target="_blank"
+                  className="hover:text-green-500"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
             </div>
           </form>
         </div>
